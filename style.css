@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  padding: 2px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  margin: auto 0;
+}
+
+.header-top {
+  background-image: url(./img/mainvisual.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+section h2 {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 60px;
+}
+
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  text-align: start;
+}
+
+.profile-img {
+  background-image: url("./img/lotus02.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name {
+  margin-bottom: 10px;
+}
+
+.bicycle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .bicycle-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bicycle-img {
+  background-image: url("./img/bicycle1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+.bicycle h3 {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.bicycle p {
+  font-size: 14px;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.5rem;
+}
